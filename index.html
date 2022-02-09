@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="input" type="text" placeholder="Search Movie" required>
+
+    <ul class="list"></ul>
+
+    <div class="pagination-wrapper d-flex align-items-center">
+        <button class="prev-btn btn btn-warning">Prev</button>
+        <ul class="pagination">
+
+        </ul>
+        <button class="next-btn btn btn-warning">Next</button>
+    </div>
+
+    <template class="template">
+        <li class="film">
+            <img class="film__img" src="https://via.placeholder.com/100" alt="movie img" width="100" height="100">
+
+            <h3 class="film__title">Movie Title</h3>
+            <p class="film__year">2022</p>
+            <p class="film__category">Movie Category</p>
+        </li>
+    </template>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
